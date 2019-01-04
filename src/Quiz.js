@@ -10,10 +10,7 @@ class Quiz extends Component{
 	}
 	render(props){
 		return(
-			<div>
-				<h1>Quiz</h1>
-				<h2 className={"quizQuestions"}>{this.state.quiz_position}: {quizData.quiz_questions[0].instruction_text}:</h2>
-			</div>
+			<div className={"quizQuestion"}>{this.state.quiz_position}: {quizData.quiz_questions[0].instruction_text}:</h2>
 		)
 	}
 }
